@@ -1,0 +1,32 @@
+.imgs {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-items: center;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    font-size: 30px;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    border-radius: 20px;
+    text-align: center;
+}
+
+button {
+    margin-top: 2rem;
+    border-radius: 30px;
+    font-size: 20px;
+    background-color: white;
+}
+
+button:hover {
+    background-color: black;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: all 0.5s;
+}
