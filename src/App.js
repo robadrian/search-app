@@ -1,7 +1,6 @@
 import './App.css';
-//import axios from 'axios';
 import { useState } from 'react';
-import { SearchImages, SaveCache } from './components/api';
+import { SearchImages } from './components/api';
 import RenderImg from './components/images';
 
 function App() {
@@ -25,13 +24,6 @@ function App() {
       {
         searchData.slice(0, -1).map((img, key) => {
 
-          const imagearr = [
-            `${state}`,
-            `${img.alt_description}`,
-            `${img.urls.thumb}`
-          ]
-
-          SaveCache(imagearr);
           return <RenderImg src={img.urls.thumb} key={key}/>
         })
       }

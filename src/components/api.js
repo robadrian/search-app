@@ -18,10 +18,4 @@ const SearchImages = (query) => {
     return img1
 }
 
-const SaveCache = (saved) => {
-    caches.open('images').then(cache => {
-        cache.add(saved[0])
-    })
-}
-
-export { SearchImages, SaveCache };
+export { SearchImages };
